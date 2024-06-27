@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20220617/pngtree-memo-list-on-note-paper-tasks-to-accomplish-photo-image_37251692.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+header .container{
+   height:10vh;
+   width:100%;
+   margin:auto;
+   padding:0 50px;
+
+
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.logo img{
+    height:35px;
+    width:35px;
+
+}
+.logo p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: default;
+
+
+
+}
+a{
+    text-decoration:none;
+    color:white;
+
+
+}
+ul{
+    list-style: none;
+    display:flex;
+    gap:14px;
+
+}
+ul{
+    list-style: none;
+
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: 14px;
+    padding:14px;
+}
+.main{
+    width:100%;
+    height:90vh;
+    position:absolute;
+}
+.content{
+    width:100%;
+    height:100%;
+    display:block;
+    margin:auto;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.content .container{
+    justify-content: center;
+    display:flex;
+    width:250px;
+    margin:auto;
+    height:100px;
+    flex-direction: column ;
+    gap: 10px;
+
+}
+.todo{
+   display:flex;
+   height: 14px;
+   align-items: center; 
+   justify-content: center;
+   background-color: white;
+   gap: 2px;
+}
+ .todo_value{
+    background: transparent;
+    border:none;
+    font-size: 15px;
+    font-weight: bold;
+    flex-grow: 1;
+    /* padding: 10px; */
+    height: 100px;
+
+    /* border-bottom: 2px solid; */
+    margin: 10px;
+
+}
+.todo_chakbox{
+    cursor: inherit;
+
+
+}
+.todo:has(.todo_chak_box.todo:has(.todo_chaak_box:checked)){
+    background: black;
+    text-decoration: line-through 1.5px;
+
+}
